@@ -1,0 +1,127 @@
+<!--
+ * @Author: leewell zzzz_justice@qq.com
+ * @Date: 2024-03-06 22:24:33
+ * @LastEditors: leewell zzzz_justice@qq.com
+ * @LastEditTime: 2024-03-07 00:09:39
+ * @FilePath: /前端学习/Studynotes/css/26.综合案例新闻列表.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例-新闻列表</title>
+
+    <style>
+            /* 1.格式化 */
+        *{
+            padding: 0;
+            margin: 0;
+            block-size: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+
+        /* 2.整个容器的位置大小和布局颜色 */
+        .container{
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+
+            margin:  auto 100px ;
+            margin-top: 30px ;
+
+            /* overflow:scroll */
+
+        }
+
+        .container .content{
+            /* 2.2标题容器的颜色和边线 */
+            background-color: #f1f1f1;
+            height: 34px;
+            border: 1px solid #dbdee1;
+            border-left: 0;         
+            
+        }
+
+        .container .content a{
+
+        /* 2.2.1容器的大小 */
+          display: block;
+          background-color: white;
+          width: 48px;
+          height: 34px;
+          
+        /* 文字容器的边线 */
+          border-top: 2px solid red;
+          border-right: 1px solid #dbdee1;
+          margin-top: -1px;
+
+        /* 文字布局 */
+          text-align: center;
+          line-height: 34px;
+
+
+        /* 文字 */
+          font-size: 15px;
+          color: black;
+        }
+
+        /* 2.3 */
+        .container .mainBody{
+
+             margin-left: 5px; 
+             
+
+
+        }
+
+        .container .mainBody li{
+            background-image:url(../image/图片.png);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-size: 10px;
+            
+        }
+ 
+            
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <a href="#">新闻</a>
+        </div>
+
+        <div class="mainBody"> 
+            <ul>
+                <li><a href="#">1234</a></li>
+                <li><a href="#">1234</a></li>
+                <li><a href="#">1234</a></li>
+                <li><a href="#">1234</a></li>
+                <li><a href="#">1234</a></li>
+             
+            </ul>
+            
+        
+        </div>
+
+
+
+        
+        
+    </div>
+   
+</body>
+</html>

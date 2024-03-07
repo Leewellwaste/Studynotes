@@ -15,19 +15,62 @@
 
   <style>
     div{
-      height: 200px;
       width: 200px;
+      height: 200px;
       background-color: pink;
 
 
-        /* 内边距 */
+      /* 1.边框线 */
+      /* soild实线 */
+      border: 3px solid blue;
+      
+      /* 虚线 */
+      /* border: 1px dashed #000; */
+
+      /* 点线 */
+      /* border: 1px dotted #000; */
+
+      /* border-top: 10px solid yellow;
+
+      border-bottom: 10px dashed #000;
+
+      border-left: 10px dotted red;
+
+      border-right: 10px solid #fff; */
+
+       
+
+        /* 2.内边距 */
+      /* 默认四个方向相同 */
       padding: 20px;
 
-      /* 边框线 */
-      border: 1px solid #000;
+      /* 单独设置 */
+      /* padding-top: 30px;
 
-      /* 外边距 */
-      margin: 20px;
+      padding-left: 30px;
+
+      padding-right: 30px;
+
+      padding-bottom: 30px; */
+
+      /* 同时4个数值 上 右 下 左*/
+      /* padding: 40px 30px 20px 10px; */
+      /* 3个 上 左右 下
+      2个 上下 左右 */
+
+
+
+
+      /* 3.外边距  不会撑大盒子*/
+      margin: 10px;
+      /* mask-border: 10px red; */
+      
+
+
+      /* 4.自动减法避免盒子变大 box-sizing:border-box; */
+      box-sizing: border-box;
+
+
     }
   </style>
 </head>
