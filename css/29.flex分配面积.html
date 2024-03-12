@@ -1,0 +1,47 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-03-12 10:12:22
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-03-12 10:15:48
+ * @FilePath: \前端\web-mac\Studynotes\css\29.flex分配面积.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+
+            display: flex;
+        }
+        .box div {
+            border: 1px solid #000;
+        }
+        .box div:nth-child(2){
+            flex:1
+        }
+        .box div:nth-child(1){
+            flex:1
+        }
+        .box div:nth-child(3){
+            flex:1
+        }
+
+
+    </style>
+<body>
+    <div class="box">
+        <div>lee</div>
+        <div>lee</div>
+        <div>lee</div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-03-12 10:23:31
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-03-12 13:52:42
+ * @FilePath: \前端\web-mac\Studynotes\css\30.页面布局案例-抖音.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音解决方案t</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;  
+        }
+        li{
+            list-style: none;
+        }
+
+        .box{
+            height: 410px;
+            width: 1200px;
+            border: 1px solid #000;
+            border-radius: 10px;
+
+            display: flex;    
+            flex-direction: column;
+            justify-content:center;
+            align-self: center;
+        }
+
+        .box ul {
+            display: flex;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            justify-content:space-evenly;
+
+            
+            
+
+        }
+
+        .box li {
+            width: 500px;
+            height: 88px;
+
+            
+            display: flex;
+
+        }
+        .box li div h3{
+            margin-left: 10px;
+           
+        }
+        .box li div p{
+            margin-left: 10px;
+        }
+
+        .box li div img{
+            height: 60px;
+        
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+            <li>
+            <div>
+            <img src="../image/47397869709c0d9e8048c0dda8ae0a5.png">
+            </div>
+
+            <div>
+                <h3>一键发布多端</h3>
+                <p>发布到各个App</p>
+            </div>
+            </li>
+
+            <li>
+                <div>
+                <img src="../image/5fca56abe19632fd9bd4403a6845aa0.png">
+                </div>
+    
+                <div>
+                    <h3>管理视频内容</h3>
+                    <p>发布到各个App</p>
+                </div>
+            </li>
+
+
+            <li>
+                <div>
+                <img src="../image/a771c4451c95f2ff39cd244070c0ecf.png">
+                </div>
+    
+                <div>
+                    <h3>发布携带组件</h3>
+                    <p>发布到各个App</p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                <img src="../image/e19ca86b1e99047d05568b9094a7c31.png">
+                </div>
+    
+                <div>
+                    <h3>数据评估分析</h3>
+                    <p>发布到各个App</p>
+                </div>
+            </li>
+    </ul>
+    
+</div>
+    
+</body>
+</html>

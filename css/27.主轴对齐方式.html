@@ -1,0 +1,78 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-03-12 09:03:08
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-03-12 09:32:40
+ * @FilePath: \前端\web-mac\Studynotes\css\27.主轴对齐方式.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-主轴对齐方式 </title>
+    <style>
+        .box{
+            display: flex;
+
+            /* justify-content */
+
+            /* 起点->终点排列 */
+            /* justify-content: start; */
+
+            /* 终点->起点排列 */
+            /* justify-content: end; */
+
+            /* 居中 */
+            /* justify-content: center; */
+
+            /* 盒子之间的间距是两端间距的两倍 */
+            /* justify-content:space-around; */
+
+            /* 赫兹之间的间距相等 */
+            /* justify-content: space-between; */
+
+            /* 各个间距都相等 */
+            /* justify-content: space-evenly; */
+
+
+            /* align-items */
+
+            /* 拉伸盒子(去掉height) */
+            /* align-items: stretch; */
+
+            /* 上下居中 */
+            /* align-items: center; */
+
+            /* align-items: start; */
+            /* align-items: end; */
+
+            
+            height: 400px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        /* 控制单个 self */
+        .box div:nth-child(2){
+            align-self: center;
+
+        }
+
+       .box div{
+        background: red;
+        width: 100px;
+        height: 100px;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>leewell</div>
+        <div>leewell</div>
+        <div>leewell</div>
+        <div>leewell</div>
+    </div>
+</body>
+</html>
