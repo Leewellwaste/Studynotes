@@ -11,6 +11,8 @@ body{
     background-color: #f5f3f7;
 }
 
+
+/* <!--1. 头部区域 --> */
 .header{
     height: 100px;
     background-color: #fff;
@@ -19,4 +21,162 @@ body{
 .header .wrapper{
     display: flex;
     padding-top: 20px;
+}
+
+/* 1.1.logo */
+.logo a {
+    display: flex;
+    height: 41px;
+    width: 195px;
+    background-image: url(../image/d2141ec2d46ee7af2b7453fc96c11be.png);
+    font-size: 0px;
+    margin-top:9px ;
+}
+
+/* 1.2.导航 */
+.nav{
+margin-left: 102px;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li {
+    display: flex;
+    margin-right: 24px;
+    margin-top: 20px;
+    padding: 0 8px;
+    padding-bottom: 6px;
+    font-size: 19px;
+}
+
+/* active 类选择器,表示默认选择a */
+.nav li .active,
+.nav li a:hover{
+    border-bottom: 2px solid blue;
+} 
+
+/* 1.3.搜索 */
+.search{
+width: 420px;
+height: 40px;
+background-color: #f3f5f7;
+border-radius: 20px;
+
+margin-top: 9px;
+margin-left: 72px;
+
+padding-left: 12px;
+padding-right: 19px;
+
+display: flex;
+}
+
+.search input{
+    flex:1;
+    border: 0px;
+    background-color: transparent;
+
+    /* 去除焦点框 */
+    outline:none;
+
+
+}
+/* ::placeholder选中关键字 */
+.search input::placeholder{
+    color: pink;
+    font-size: 14px;
+}
+
+/* 父级是flex布局 子级继承弹性盒子 加宽高生效 */
+.search a{
+    width: 16px;
+    height: 16px;
+    background-image: url(../image/搜索.png);
+
+
+    /*  cover填充整个容器并可能裁剪图像 */
+    /* contain完全适应容器可能留下一些空白 */
+    background-size: contain;
+    margin-top: 10px;
+}
+
+/*1.4.用户界面 */
+.user{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+
+
+    
+}
+.user a {
+width: 34px;
+height: 34px;
+
+    background-image: url(../image/头像面状.png);
+    background-size: contain;
+}
+
+.user p{
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 10px;
+}
+
+
+/* <!--2. banner区域 --> */
+.banner{
+    height: 420px;
+    background-color: #0092cb;
+    
+
+}
+
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../image/bannervue.png);
+    background-size: contain;
+
+    display: flex;
+    justify-content:space-between ;
+}
+
+/* 2.2左边导航 */
+.banner .wrapper .left{
+    width: 200px;
+    background-color:rgba(0,0,0,0.42);
+    margin-left: -52px;
+
+}
+
+/* 2.2.1左边导航字体 */
+.banner .wrapper .left a{
+   color: 	#BBFFFF;
+   height: 46px;
+   line-height:46px ;
+   font-size: 16px;
+
+
+   display: block;
+   margin-left: 20px;
+
+   background: url(../image/右箭头.png) no-repeat right center;
+   background-size:contain;  
+
+
+}
+
+.banner .wrapper .left a:hover{
+    color: 	#00F5FF;
+}
+
+/* 2.3右边导航 */
+.banner .wrapper .right{
+    width: 218px;
+    height: 305px;
+    background-color: #fff;
+
+   margin:auto 0;
 }
