@@ -1,0 +1,22 @@
+/* 首页css文件 */
+
+/* 整体居中 */
+.wrapper{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* 整体背景灰色 */
+body{
+    background-color: #f5f3f7;
+}
+
+.header{
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper{
+    display: flex;
+    padding-top: 20px;
+}
