@@ -1,0 +1,23 @@
+{
+  "id": "4472994",
+  "name": "点击栏",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "970791",
+      "name": "首页",
+      "font_class": "shouye1-copy",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "13644706",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

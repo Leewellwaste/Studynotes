@@ -21,11 +21,43 @@ div.box322{
 
 }
 
+/* 33 */
+.iconfont{
+  font-size: 200px;
+  color: pink;
+}
 
-.box33 {
-  width: 112px;
-  height: 110px;
-  background-color: pink;
-  background-image: url(../image/头像.JPG);
-  background-size: contain;
+/* 34 */
+.vam34{
+  border: 1px solid #000;
+ 
+}
+
+.vam34 img {
+  vertical-align: middle;
+}
+
+
+.tran35 img {
+  width: 200px;
+  height: 150px;
+}
+
+/* 放置变大 */
+.tran35 img:hover{
+  width: 500px;
+  height: 400px;
+
+  /* 加入时间 */
+  transition: all 1s;
+}
+
+.cursor36{
+  height: 200px;
+  width: 200px;
+  background: pink;
+
+  cursor: text;
+  cursor: pointer;
+  cursor:move ;
 }
