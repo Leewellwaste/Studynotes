@@ -1,5 +1,8 @@
 /* 首页css文件 */
 
+/* text-align 水平居中
+line-height 上下居中 */
+
 /* 整体居中 */
 .wrapper{
     margin: 0 auto;
@@ -172,11 +175,82 @@ height: 34px;
     color: 	#00F5FF;
 }
 
-/* 2.3右边导航 */
+/* 2.3右边课程表 */
 .banner .wrapper .right{
     width: 218px;
     height: 305px;
     background-color: #fff;
 
    margin:auto 0;
+   border-radius: 10px;
+
+   
+}
+
+.banner .wrapper .right h3{
+    width: 218px;
+    height: 48px;
+    line-height: 48px;
+    background-color: 	#00F5FF;
+    padding-left: 20px;
+
+    border-radius: 10px;
+    
+
+    color: white;
+    font-weight: normal;
+}
+
+.banner .wrapper .right .content{
+    height: 257px; 
+    padding: 14px;
+}
+
+.banner .wrapper .right dl{
+    border-bottom: 1px solid #000;
+    margin-bottom: 19px;
+    
+}
+
+.banner .wrapper .right dt{
+    line-height: 20px;
+    font-weight: 900;
+    
+}
+
+.banner .wrapper .right dd{
+    display: flex;
+    margin-top: 5px;
+}
+
+.banner .wrapper .right p{
+    color: #00F5FF;
+   
+}
+
+.banner .wrapper .right b{
+    color:darkgray;
+}
+
+.banner .wrapper .right .content a{
+    display: block;
+width: 180px;
+height: 30px;
+background-color:#0092cb;
+border-radius: 7px;
+text-align: center;
+line-height: 30px;
+
+margin-left: 7px;
+}
+
+/* 精品推荐 */
+.recommend .wrapper{
+    display: flex;
+    
+}
+
+.recommend .wrapper .m{
+    flex:1
+    
 }

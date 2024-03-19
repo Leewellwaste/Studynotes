@@ -1,3 +1,31 @@
 h3{
   color: aqua;
 }
+
+div{
+  position: absolute;
+  
+}
+
+div.box321{
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+}
+div.box322{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  top: 120px;
+  left: 120px;
+
+}
+
+
+.box33 {
+  width: 112px;
+  height: 110px;
+  background-color: pink;
+  background-image: url(../image/头像.JPG);
+  background-size: contain;
+}
