@@ -61,3 +61,31 @@ div.box322{
   cursor: pointer;
   cursor:move ;
 }
+
+.transfrom37{
+  height: 100px;
+  width: 100px;
+  margin: 100px 0;
+  background-color: pink;
+
+  transform: all 3s;
+}
+.transfrom37:hover{
+  transform:translate(800px) rotate(360deg) scale(2);
+}
+
+
+.transfrom38{
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+/* position: absolute; */
+}
