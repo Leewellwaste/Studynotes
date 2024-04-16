@@ -1,0 +1,45 @@
+<!--
+ * @Author: leewell zzzz_justice@qq.com
+ * @Date: 2024-04-13 21:12:05
+ * @LastEditors: leewell zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-13 21:42:15
+ * @FilePath: /js/16.事件对象.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件对象</title>
+</head>
+<body>
+    <!-- <button>Tap</button> -->
+
+
+    <input type="text" name="" id="">
+    <script>
+
+
+// type 获取当前事件类型
+            // clinenx/clinenY 获取光标相对于浏览器可见窗口左上角的位置
+            //offsetX/offsetY 获取光标相对于当前DOM元素左上角的位置
+            //key 用户按下键盘的数值
+        // let btn = document.querySelector('button')
+        // btn.addEventListener('click',function(e){
+        //     console.log(e)
+        // })
+
+        //输入键盘弹起时触发
+        const input = document.querySelector('input')
+        input.addEventListener('keyup',function(e){
+            
+            // console.log(e.key)
+            if(e.key==='Enter'){
+                console.log('getData')
+            }
+        })
+    </script>
+    
+</body>
+</html>

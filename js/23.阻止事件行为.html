@@ -1,0 +1,38 @@
+<!--
+ * @Author: leewell zzzz_justice@qq.com
+ * @Date: 2024-04-14 17:30:32
+ * @LastEditors: leewell zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-14 18:12:18
+ * @FilePath: /js/23.阻止事件行为.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阻止元素</title>
+</head>
+<body>
+     <!-- <form action="https://www.baidu.com/">
+        <input type="submit" name="" id="" value="可以提交">
+     </form> -->
+
+     <a href="http://wwww.baidu.com">
+        <button>TAp</button>
+     </a>
+    <script>
+        // const form = document.querySelector('form')
+        // form.addEventListener('submit',function(e){
+        //     //阻止默认行为
+        //     e.preventDefault()
+        // })
+
+        const a = document.querySelector('a')
+        a.addEventListener('click',function(e){
+            e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>

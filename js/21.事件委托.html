@@ -1,0 +1,42 @@
+<!--
+ * @Author: leewell zzzz_justice@qq.com
+ * @Date: 2024-04-14 16:34:14
+ * @LastEditors: leewell zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-14 16:55:16
+ * @FilePath: /js/21.事件委托.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+    </ul>
+    <script>
+        // 点击小li 文字变成红色
+        // 按照事件委托的方式 委托给父级,事件写在父级身上
+        const ul = document.querySelector('ul')
+        ul.addEventListener('click',function(e){
+            // console.log('点击')
+            // alert('leewell')
+            // this.style.color = 'pink'
+
+            console.log(e.target)
+            const li = e.target
+            li.style.color = 'pink'
+        
+        })
+        
+    </script>
+</body>
+</html>
