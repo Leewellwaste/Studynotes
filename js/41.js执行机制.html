@@ -1,11 +1,28 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-04-19 14:32:47
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-19 14:55:06
+ * @FilePath: \Studynotes\js\41.js执行机制.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>js执行机制</title>
+    <!-- js单线程,由上而下 -->
+    <!-- 后面html5推出了web worker标准 允许js创建多线程(同步和异步) -->
 </head>
 <body>
+    <script>
+        console.log(111)
+        setTimeout(function(){
+            console.log(222)
+        },0)
+        console.log(333)
+    </script>
     
 </body>
 </html>
