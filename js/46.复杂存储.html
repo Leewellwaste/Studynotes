@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // // 1.创建数据
+        // let creaUser = localStorage.setItem('username','leewell')
+        // console.log(creaUser)
+
+        // //2.读取数据
+        // let getUser = localStorage.getItem('username','jackson')
+        // console.log(getUser)
+
+        //3.复杂数据 
+        const obj = {
+            userName:'leewell',
+            age:24,
+            gender:'man'
+            
+        }
+        // 无法直接使用
+        // console.log(localStorage.setItem('obj',obj))
+        // console.log(localStorage.getItem('obj',obj))
+
+        //4.必须转化为json字符串进行使用
+        // 4.1储存set
+        localStorage.setItem('obj',JSON.stringify(obj))
+
+        //4.2获取get
+        console.log(localStorage.getItem('obj'));  
+    </script>
+    
+</body>
+</html>  

@@ -1,8 +1,8 @@
 <!--
  * @Author: Leewellwaste zzzz_justice@qq.com
  * @Date: 2024-04-20 16:57:43
- * @LastEditors: Leewellwaste zzzz_justice@qq.com
- * @LastEditTime: 2024-04-22 17:02:24
+ * @LastEditors: leewell zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-22 22:47:31
  * @FilePath: \Studynotes\js\45.本地存储.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -17,7 +17,16 @@
 
     <script>
         // localStorage.setItem('键','数值')
+        //1.存储数据/改动数据
         localStorage.setItem('username','leewell')
+
+        // 2.读取数据
+       let i = localStorage.getItem('username')
+       console.log(i)
+
+       //3.删除数据
+       let j = localStorage.removeItem('username')
+       console.log(j)
     </script>
     
 </body>
