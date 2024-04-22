@@ -1,0 +1,54 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-04-16 11:23:16
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-16 16:38:17
+ * @FilePath: \Studynotes\js\30.日期对象-实例化.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日期实例化</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 50px;
+            width: 400px;
+            background-color: pink;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <script>
+        document.write(new Date()+"<br>")
+        // document.write(new Date('2024-1-1'))
+        document.write(new Date().getDate())
+
+
+        const div = document.querySelector('div')
+        function getMyDate(){
+            const date = new Date()
+            return `今天是${date.getFullYear()}年${date.getMonth()+1}月${date.getDate()}日
+            ${date.getHours()}时${date.getMinutes()}分${date.getSeconds()}秒`
+        }
+        
+        div.innerHTML = getMyDate()
+
+        setInterval(function(){
+            div.innerHTML = getMyDate()
+        },1000)
+    </script> 
+</body>
+</html>  

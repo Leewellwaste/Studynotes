@@ -1,0 +1,38 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-04-11 09:45:42
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-12 08:47:05
+ * @FilePath: \Studynotes\js\13.事件监听.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件监听</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<div class="box">1</div>
+<script>
+    // 光标触碰事件,光标触及+1
+    let div = document.querySelector('div')
+
+    div.addEventListener('mouseenter',function(){
+
+        console.log('leewell')
+    })
+
+</script>
+
+<body>
+    
+</body>
+</html>
