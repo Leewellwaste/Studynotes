@@ -1,0 +1,35 @@
+<!--
+ * @Author: Leewellwaste zzzz_justice@qq.com
+ * @Date: 2024-04-23 08:30:33
+ * @LastEditors: Leewellwaste zzzz_justice@qq.com
+ * @LastEditTime: 2024-04-23 11:19:11
+ * @FilePath: \Studynotes\js\48.数组map和join的方法.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map方法 迭代数组</title>
+</head>
+<body>
+
+    <script>
+        // 1.map可以遍历数组处理数据,并返回新的数据
+        const arr = ['leewell','jack','jackson']
+        // 1.1数组元素  索引号
+       let arrer = arr.map(function(ele,index){
+            console.log(ele)
+            console.log(index)
+            return 'name:' + ele
+        })
+        console.log(arrer)
+
+
+        //2.数组join方法 把数组转换为字符串
+        console.log(arrer.join(''))
+    </script>
+    
+</body>
+</html>
