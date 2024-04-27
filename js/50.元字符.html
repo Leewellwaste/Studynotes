@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元字符</title>
+    <style>
+        div{
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+        }
+        button{
+            height: 20px;
+            width: 50px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="input">Input:</label>
+        <input type="text" name="" id="input">
+        <button onclick="checkInput()">确认</button>
+    </div>
+    <script>
+        function checkInput() {
+            let inputValue = document.getElementById("input").value;
+
+            // 1.只能为11位数 
+            console.log(/^.{11}$/.test(inputValue));
+
+            //2.大于11位数
+            console.log(/^.{11,}$/.test(inputValue));
+
+            //2.m到n之间的位数
+            console.log(/^.{11,13}$/.test(inputValue));
+        }
+    </script>
+</body>
+</html>
