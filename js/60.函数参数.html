@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数参数</title>
+    <!-- 1.动态参数 arguments是函数内置的伪数组变量,包含了调用函数传入的所有实参 -->
+    
+    <!-- 2.剩余参数 允许将一个不定数量的参数表示一个数组 -->
+
+    <!-- 3.数组展开 -->
+</head>
+<body>
+    <script>
+        //1.
+        // function sum(){
+        //     // console.log(arguments)
+        //     let sum = 0
+        //     for (let i = 0; i< arguments.length; i++) {
+        //       sum += arguments[i]
+              
+               
+        //     }
+        //     console.log(sum)
+        // }
+        // sum(2,3,1,78)
+
+
+        //2.
+        // function sum(a,...arr) {
+          
+        //     let num1 = a;
+        //     for (let num of arr){
+        //     num1 += num;
+        //     }
+        //     console.log(num1) 
+        // }
+        
+        // sum(1,2,3,4)
+
+        //3.
+        function num (a,...arr){
+            console.log(Math.max(...arr))
+
+        }
+        num(1,2,3,0,199)
+
+
+
+    </script>
+    
+</body>
+</html>
