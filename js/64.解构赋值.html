@@ -2,7 +2,7 @@
  * @Author: Leewellwaste zzzz_justice@qq.com
  * @Date: 2024-04-30 17:11:47
  * @LastEditors: Leewellwaste zzzz_justice@qq.com
- * @LastEditTime: 2024-05-07 16:21:16
+ * @LastEditTime: 2024-05-09 15:16:19
  * @FilePath: \Studynotes\js\64.解构赋值.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE 
 -->
@@ -13,8 +13,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- 解构就是批量声名 -->
+    <!-- 对象结构 -->
 </head>
-<body>
+<body> 
+    <script>
+        // const {userName,age} = {userName:'leewell',age:23}
+        // console.log(userName,age)
+
+        // 2.解构数组对象
+        // const obj = [{
+        //     name:'jackson',
+        //     age2:30
+        // }]
+        // const [{name,age2}] = obj
+        // console.log(name,age2)
+
+        //3.多级对象解构
+        const obj ={
+            name:'leewell',
+            age:24,
+            interest: {
+               food:'hamburger',
+               drink:'sodaWater' 
+            }
+        }
+
+        const {name,interest:{food,drink}} = obj
+        console.log(name)
+        
+    </script>
     
 </body>
 </html>
