@@ -2,7 +2,7 @@
  * @Author: Leewellwaste zzzz_justice@qq.com
  * @Date: 2024-04-29 17:22:24
  * @LastEditors: Leewellwaste zzzz_justice@qq.com
- * @LastEditTime: 2024-04-29 17:22:30
+ * @LastEditTime: 2024-04-30 09:40:28
  * @FilePath: \Studynotes\js\61.箭头函数.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -11,9 +11,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>箭头函数</title>
 </head>
 <body>
+    <script>
+        // 1.普通函数
+        // const fn1 = function () {
+        //     console.log(12)
+        // }
+        // fn1()
+
+        //2.箭头函数
+        // const fn = () => {
+        //     console.log(123)
+        // }
+        // fn()
+
+        //2.1 传递参数
+        // const fn = (x) => {
+        //     console.log(x)
+        // }
+        // fn(245)
+        
+        //2.2 只有一个形参 x 可以省略小括号,只有一行代码 console.log(x) 可以省略大括号
+        // const fn = x => console.log(x)
+        // fn(2)
+
+        //2.3 只有一个代码时可以省略 return
+        const fn = x => x+x
+        console.log(fn(2))
+
+
+
+    </script>
+    
     
 </body>
 </html>

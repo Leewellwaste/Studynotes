@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箭头函数的参数</title>
+</head>
+<body>
+    <script>
+        //1.箭头函数求和
+    //     const fn = function getSum(x,y){
+           
+    //         console.log(x+y)
+    //     }
+    //    fn(1,2)
+
+       const fn = (...arr) => {
+        let num = 0
+        for (let i = 0; i < arr.length; i++) {
+        num += arr[i] 
+        }     
+          
+        return num
+    }
+      console.log( fn(1,2,3))
+
+
+    </script>
+    
+</body>
+</html>
