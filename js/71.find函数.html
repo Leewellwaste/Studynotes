@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.find函数 -->
+    <script>
+    //     const arr = [
+    //         {
+    //             one:{
+    //         name:'leewell',
+    //         age:24
+    //     }
+    // },
+    //     {
+    //         two:{
+    //         name:'jackson',
+    //         age:30
+    //     }
+    // }
+    // ]
+
+    const arr =[
+        {name:'leewell',
+        age:23
+        },
+        {
+            name:'jackson',
+            age:30
+        }
+    ]
+        //找leewell
+        arr.find(function(item){
+            // console.log(item.name)
+            console.log('1')
+            return item.name ==='jackson'
+        })
+    </script>
+    
+</body>
+</html>
