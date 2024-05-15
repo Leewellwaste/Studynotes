@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构造函数</title>
+</head>
+<body>
+    
+    <script>
+        // 构造函数
+        function people(name,age){
+            this.name = name
+            this.age = age
+
+            this.interest = function()
+            {
+                console.log('hello')
+            }
+        }
+        let obj = new people('leewell',24)
+        let obj2 = new people('jackson',30)
+        obj.interest()
+        obj2.interest()
+        console.log(obj.interest == obj2.interest)
+
+    </script>
+</body>
+</html>
