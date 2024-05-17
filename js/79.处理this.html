@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>处理this</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            name:'leewell',
+            age:24
+        }
+        function fn(){
+            console.log(this)
+        }
+        const i = fn.bind(obj)
+        console.log(i)
+        
+            // bind()改变this指向 
+            // 1.bind不会调用函数
+            // 2.能改变this指向 
+
+    </script>
+
+</body>
+</html>

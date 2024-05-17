@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深浅拷贝</title>
+</head>
+<body>
+    <script>
+        
+        let obj = {
+            name: 'leewell',
+            age: 24
+        }
+
+        // 1.浅拷贝
+        // const o = {...obj}
+        // console.log(o)
+        // obj.age = 30
+        // console.log('obj',obj) 
+        // console.log('o',o)
+
+        // 2.深拷贝(通过递归实现)
+
+        const o ={}
+        // 拷贝函数
+        function funcCopy(newObj,oldObj){
+            for(let k in oldObj){
+                // k 属性名 oldObj[k]属性值
+
+                console.log(o.k)
+            }
+
+        }
+        funcCopy(o,obj)//函数调用 o新的  obj旧的
+
+
+    </script>  
+    
+</body>
+</html>
